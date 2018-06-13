@@ -1,10 +1,18 @@
 .ddd-splash {
   position: relative;
-  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  color: $white;
   z-index: 0;
+
+  &::before {
+    content: '';
+    display: block;
+    min-height: 100vh;
+  }
 
   &::after {
     content: '';
@@ -15,5 +23,13 @@
     bottom: 0;
     background-color: rgba($black, 0.5);
     z-index: -1;
+  }
+
+  .ddd-splash__title {
+    margin: 0 0 0.15em;
+  }
+
+  .ddd-splash__subtitle {
+    font-weight: 300;
   }
 }

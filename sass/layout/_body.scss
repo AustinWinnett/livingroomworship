@@ -2,3 +2,8 @@ body {
   font-size: 16px;
   @extend %sans-serif;
 }
+
+.alignment-container {
+  flex: 0 0 auto;
+  width: 100%;
+}

@@ -1,6 +1,16 @@
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'desk-dog-development' ); ?></a>
 
-<header id="masthead" class="site-header">
+<?php
+
+if ( is_front_page() ) {
+  $header_color = 'header--home';
+} else {
+  $header_color = '';
+}
+
+?>
+
+<header id="masthead" class="site-header <?php echo $header_color; ?>">
 
   <div class="container">
     <div class="row">

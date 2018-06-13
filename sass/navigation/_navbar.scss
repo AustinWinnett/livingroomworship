@@ -25,7 +25,7 @@ header.site-header {
 
   span {
     flex: 0 0 auto;
-    margin-left: 1em;
+    margin-left: 0.5em;
     color: $text-dark;
   }
 
@@ -43,13 +43,11 @@ header.site-header {
   justify-content: flex-end;
 }
 
-.menu {
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-  }
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
 
   li {
     flex: 0 0 auto;
@@ -69,7 +67,8 @@ header.site-header {
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         height: 3px;
         width: 0;
         background-color: $primary-color;
@@ -88,5 +87,14 @@ header.site-header {
         width: 100%;
       }
     }
+  }
+}
+
+.header--home {
+  .navbar-logo a span {
+    color: $white;
+  }
+  .nav-menu li a {
+    color: $white;
   }
 }
