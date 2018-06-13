@@ -1,0 +1,40 @@
+{
+  "name": "livingroomworship",
+  "version": "1.0.0",
+  "author": "Desk Dog Development <austinjwinnett@gmail.com>",
+  "homepage": "https://deskdogdev.com",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AustinWinnett/livingroomworship"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ],
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-concat": "latest",
+    "gulp-footer": "^2.0.1",
+    "gulp-imagemin": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "node-sass": "latest"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
