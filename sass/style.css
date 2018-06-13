@@ -3,7 +3,7 @@ Theme Name: Desk Dog Development
 Theme URI: http://underscores.me/
 Author: Desk Dog Development
 Author URI: https://deskdogdev.com
-Description: A custom theme for Winnie Say What.
+Description: A custom theme for Living Room Worship.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -802,26 +802,6 @@ header.site-header {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-.site-footer {
-  background-color: #333;
-  color: #FFFFFF;
-  padding: 4em 0;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75); }
-
-.footer-logo {
-  display: block;
-  margin: 0 auto 1em;
-  max-width: 250px;
-  text-align: center; }
-
-.footer__credits {
-  text-align: center;
-  font-size: 0.8em; }
-
-body {
-  background-color: #ECEFF1; }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -893,63 +873,3 @@ object {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-.ddd-hero-banner {
-  height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-align: center;
-  color: #FFFFFF; }
-
-.ddd-blog-roll {
-  padding: 2em 0; }
-  .ddd-blog-roll .ddd-blog-roll__flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-  .ddd-blog-roll .ddd-blog-roll__roll {
-    padding-right: 1em; }
-  .ddd-blog-roll .ddd-blog-roll__post {
-    background-color: #FFFFFF;
-    padding: 1.5em 1.5em 1.5em;
-    border: 1px solid #b1bec6;
-    margin: 1em 0; }
-  .ddd-blog-roll .ddd-blog-roll__post-title a {
-    color: #333; }
-    .ddd-blog-roll .ddd-blog-roll__post-title a:hover {
-      color: #00DDD4; }
-  .ddd-blog-roll .ddd-blog-roll__post-date {
-    font-size: 0.7em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em; }
-  .ddd-blog-roll .ddd-blog-roll__sidebar {
-    margin-top: 1em;
-    background-color: #FFFFFF;
-    border: 1px solid #b1bec6;
-    padding: 1.5em;
-    min-width: 250px; }
-    .ddd-blog-roll .ddd-blog-roll__sidebar ul {
-      margin-left: 0; }
-      .ddd-blog-roll .ddd-blog-roll__sidebar ul li {
-        list-style: none; }
-        .ddd-blog-roll .ddd-blog-roll__sidebar ul li::before {
-          content: '-';
-          padding-right: 0.25em; }
-    .ddd-blog-roll .ddd-blog-roll__sidebar .widget-title {
-      font-size: 0.8em;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 0.1em; }

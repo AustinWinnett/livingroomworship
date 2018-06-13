@@ -15,7 +15,6 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="container">
-			<a href="<?php echo site_url('/'); ?>" class="footer-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/winnie-logo.png" alt="<?php echo get_bloginfo('name'); ?>"></a>
 			<div class="footer__credits">
 				<p>&copy; 2018 | Website by Desk Dog Development</p>
 			</div> <!-- /.footer__credits -->
