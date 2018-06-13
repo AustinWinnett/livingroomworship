@@ -1,0 +1,42 @@
+.blog {
+  .post {
+
+
+  }
+
+  .entry-header {
+    margin-top: 1.5em;
+  }
+
+  .entry-title {
+    margin-bottom: 0.05em;
+
+    a {
+      color: $text-dark;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .entry-content {
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+    margin-bottom: 2em;
+    border-bottom: 2px solid $text-dark;
+    max-width: 650px;
+  }
+
+  .post:last-child {
+    .entry-content {
+      border-bottom: 0;
+    }
+  }
+}
+
+.single {
+  .entry-content {
+    max-width: 650px;
+  }
+}

@@ -24,15 +24,19 @@ input[type="submit"] {
 .btn {
 	position: relative;
 	font-size: 0.8em;
-	padding: 1em 1.5em;
+	display: inline-block;
+	padding: 0.75em 1.5em;
 	border: 1px solid $primary-color;
-	font-weight: 500;
+	background-color: $primary-color;
 	text-transform: uppercase;
+	@extend %heading-font;
+	color: $white;
 	letter-spacing: 0.1em;
-	color: $text-dark;
 	overflow: hidden;
+	transition: 0.15s ease-in-out;
 
 	&:hover {
-		background-color: $primary-color;
+		background-color: transparent;
+
 	}
 }

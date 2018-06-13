@@ -18,6 +18,22 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+			<?php $blog_page = get_option('page_for_posts'); ?>
+
+		<?php if ( get_the_post_thumbnail_url($blog_page) ) : ?>
+
+			<?php
+				ddd_component(
+					'hero-banner',
+
+					array(
+						'image'  => get_the_post_thumbnail_url($blog_page)
+					)
+				)
+			?>
+
+		<?php endif; ?>
+
 		<?php
 		if ( have_posts() ) :
 
@@ -55,5 +71,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

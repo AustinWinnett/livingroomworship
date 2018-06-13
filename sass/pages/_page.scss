@@ -1,0 +1,11 @@
+.content-area {
+  padding-top: 105px;
+
+  &.content-area--home {
+    padding-top: 0;
+  }
+}
+
+.page .entry-content {
+  max-width: 650px;
+}

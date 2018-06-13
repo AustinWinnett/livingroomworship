@@ -4,10 +4,15 @@ header.site-header {
   left: 0;
   width: 100%;
   padding: 0.5em 0;
+  background-color: $white;
   z-index: 100;
 
   .logged-in & {
     top: 30px;
+  }
+
+  .home & {
+    background-color: transparent;
   }
 }
 

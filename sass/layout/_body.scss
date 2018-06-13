@@ -1,6 +1,7 @@
 body {
   font-size: 16px;
   @extend %sans-serif;
+  color: $text-dark;
 }
 
 .alignment-container {

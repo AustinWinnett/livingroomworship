@@ -24,7 +24,7 @@
 	<footer id="colophon" class="site-footer <?php echo $footer_position; ?>">
 		<div class="container">
 			<div class="footer__credits">
-				<p>&copy; 2018 | Website by Desk Dog Development</p>
+				<p>&copy; <?php echo date('Y'); ?> Living Room Worship | Website by Desk Dog Development</p>
 			</div> <!-- /.footer__credits -->
 		</div> <!-- /.container -->
 	</footer><!-- #colophon -->
