@@ -3,15 +3,39 @@ header.site-header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $white;
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-  padding: 1em 0;
+  padding: 0.5em 0;
   z-index: 100;
+
+  .logged-in & {
+    top: 30px;
+  }
 }
 
-.navbar-logo img {
-  max-width: 100px;
+.navbar-logo {
+  font-size: 1.125em;
+  @extend %heading-font;
+  text-transform: uppercase;
+
+  a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  span {
+    flex: 0 0 auto;
+    margin-left: 1em;
+    color: $text-dark;
+  }
+
+  img {
+    flex: 0 0 auto;
+    max-width: 60px;
+  }
 }
+
+
 
 .navbar-nav.column {
   display: flex;
@@ -32,6 +56,9 @@ header.site-header {
     padding-left: 1em;
     margin-bottom: 0;
     list-style: none;
+    @extend %heading-font;
+    text-transform: uppercase;
+    font-size: 1.125em;
 
     a {
       position: relative;
@@ -45,7 +72,7 @@ header.site-header {
         left: 0;
         height: 3px;
         width: 0;
-        background-color: $tertiary-color;
+        background-color: $primary-color;
         transition: 0.15s ease-in-out;
       }
 

@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="navbar-logo column">
-        <a href="<?php echo site_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/winnie-logo.png" alt="<?php echo get_bloginfo('name'); ?>"></a>
+        <a href="<?php echo site_url('/'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/LivingRoomWorshipLogo.png" alt="<?php echo get_bloginfo('name'); ?>"> <span class="navbar-logo__title">Living Room Worship</span></a>
       </div>
 
       <nav id="site-navigation" class="navbar-nav column">

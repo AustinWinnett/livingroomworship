@@ -13,7 +13,15 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<?php
+		if ( is_front_page() ) {
+			$footer_position = 'footer--home';
+		} else {
+			$footer_position = '';
+		}
+	?>
+
+	<footer id="colophon" class="site-footer <?php echo $footer_position; ?>">
 		<div class="container">
 			<div class="footer__credits">
 				<p>&copy; 2018 | Website by Desk Dog Development</p>

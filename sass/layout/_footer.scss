@@ -1,3 +1,12 @@
 .site-footer {
-
+  font-size: 0.875em;
+  &.footer--home {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    color: $white;
+    font-weight: 300;
+  }
 }

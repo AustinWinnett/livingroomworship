@@ -357,30 +357,60 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Bold.eot");
+  src: url("../assets/fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Bold.woff2") format("woff2"), url("../assets/fonts/Roboto-Bold.woff") format("woff"), url("../assets/fonts/Roboto-Bold.ttf") format("truetype"), url("../assets/fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("../assets/fonts/Oswald-Bold.eot");
+  src: url("../assets/fonts/Oswald-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Oswald-Bold.woff2") format("woff2"), url("../assets/fonts/Oswald-Bold.woff") format("woff"), url("../assets/fonts/Oswald-Bold.ttf") format("truetype"), url("../assets/fonts/Oswald-Bold.svg#Oswald-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Regular.eot");
+  src: url("../assets/fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Regular.woff2") format("woff2"), url("../assets/fonts/Roboto-Regular.woff") format("woff"), url("../assets/fonts/Roboto-Regular.ttf") format("truetype"), url("../assets/fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("../assets/fonts/Oswald-Regular.eot");
+  src: url("../assets/fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Oswald-Regular.woff2") format("woff2"), url("../assets/fonts/Oswald-Regular.woff") format("woff"), url("../assets/fonts/Oswald-Regular.ttf") format("truetype"), url("../assets/fonts/Oswald-Regular.svg#Oswald-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Light.eot");
+  src: url("../assets/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Roboto-Light.woff2") format("woff2"), url("../assets/fonts/Roboto-Light.woff") format("woff"), url("../assets/fonts/Roboto-Light.ttf") format("truetype"), url("../assets/fonts/Roboto-Light.svg#Roboto-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 body,
-button,
-input,
-select,
-optgroup,
-textarea {
-  color: #333;
-  font-family: sans-serif;
-  line-height: 1.5; }
+.sans-serif {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal; }
 
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
-
-p {
-  margin-bottom: 1.5em; }
+h1,
+.h1, h2,
+.h2, h3,
+.h3, h4,
+.h4, h6,
+.h6, .navbar-logo, .menu li,
+.heading-font {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  font-style: normal; }
 
 dfn, cite, em, i {
   font-style: italic; }
-
-blockquote {
-  margin: 0 1.5em; }
-
-address {
-  margin: 0 0 1.5em; }
 
 pre {
   background: #eee;
@@ -409,15 +439,49 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.large-bold-title {
-  font-size: 3em;
-  font-weight: bold;
+/*
+ * Custom Typography
+ */
+h1,
+.h1 {
   text-transform: uppercase;
-  letter-spacing: 0.1em; }
+  font-size: 3.125em; }
 
-a {
-  -webkit-transition: 0.15s ease-in-out;
-  transition: 0.15s ease-in-out; }
+h2,
+.h2 {
+  text-transform: uppercase;
+  font-size: 2.85em; }
+
+h3,
+.h3 {
+  text-transform: uppercase;
+  font-size: 2.5em; }
+
+h4,
+.h4 {
+  text-transform: uppercase;
+  font-size: 2.15em; }
+
+h5,
+.h5 {
+  font-size: 2.85em; }
+
+h6,
+.h6 {
+  text-transform: uppercase;
+  font-size: 1.125em; }
+
+p {
+  margin-bottom: 1.5em; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+.light {
+  font-weight: 300; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -511,14 +575,14 @@ input[type="submit"] {
   position: relative;
   font-size: 0.8em;
   padding: 1em 1.5em;
-  border: 1px solid #00DDD4;
+  border: 1px solid #E84848;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #333;
   overflow: hidden; }
   .btn:hover {
-    background-color: #00DDD4; }
+    background-color: #E84848; }
 
 input[type="text"],
 input[type="email"],
@@ -655,14 +719,37 @@ header.site-header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  padding: 1em 0;
+  padding: 0.5em 0;
   z-index: 100; }
+  .logged-in header.site-header {
+    top: 30px; }
 
-.navbar-logo img {
-  max-width: 100px; }
+.navbar-logo {
+  font-size: 1.125em;
+  text-transform: uppercase; }
+  .navbar-logo a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .navbar-logo span {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-left: 1em;
+    color: #333; }
+  .navbar-logo img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    max-width: 60px; }
 
 .navbar-nav.column {
   display: -webkit-box;
@@ -693,7 +780,9 @@ header.site-header {
           flex: 0 0 auto;
   padding-left: 1em;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.125em; }
   .menu li a {
     position: relative;
     color: #333;
@@ -705,7 +794,7 @@ header.site-header {
       left: 0;
       height: 3px;
       width: 0;
-      background-color: #00DDD4;
+      background-color: #E84848;
       -webkit-transition: 0.15s ease-in-out;
       transition: 0.15s ease-in-out; }
     .menu li a:hover::before {
@@ -802,6 +891,20 @@ header.site-header {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+.site-footer {
+  font-size: 0.875em; }
+  .site-footer.footer--home {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    color: #FFFFFF;
+    font-weight: 300; }
+
+body {
+  font-size: 16px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -869,6 +972,26 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+.ddd-splash {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0; }
+  .ddd-splash::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
 
 /*--------------------------------------------------------------
 # Components

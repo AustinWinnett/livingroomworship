@@ -116,7 +116,7 @@
 		}
 	}( container ) );
 
-	var fixedHeader = true;
+	var fixedHeader = false;
 
   if ( fixedHeader ) {
     var headerHeight = $('.site-header').outerHeight();

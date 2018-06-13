@@ -54,3 +54,8 @@ function new_excerpt_more($more) {
 	return '&hellip;<br /><br /><a href="' . get_permalink() . '" class="btn">Read more</a>';
 }
 add_action('excerpt_more', 'new_excerpt_more');
+
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_login_header');
