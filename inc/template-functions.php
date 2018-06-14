@@ -36,6 +36,9 @@ function desk_dog_development_pingback_header() {
 }
 add_action( 'wp_head', 'desk_dog_development_pingback_header' );
 
+// Include CPTs
+require_once( __DIR__ . '/cpt/song.php');
+
 function ddd_component( $component, $data = array(), $selectors = array() ) {
 	if ( $selectors['classes'] && $selectors['id'] ) {
 		$component_info = 'class="ddd-'. $component . ' ' . $selectors['classes'] . '" id="' . $selectors['id'] . '"';

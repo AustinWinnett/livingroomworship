@@ -6,6 +6,8 @@
 
 (function ($) {
 
-  
+  $('.song-entry__title').click(function() {
+    $(this).parent().find('.song-entry__links').slideToggle();
+  });
 
 })(jQuery);

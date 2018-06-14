@@ -451,17 +451,17 @@ h1,
 h2,
 .h2 {
   text-transform: uppercase;
-  font-size: 2.85em; }
+  font-size: 2.5em; }
 
 h3,
 .h3 {
   text-transform: uppercase;
-  font-size: 2.5em; }
+  font-size: 2em; }
 
 h4,
 .h4 {
   text-transform: uppercase;
-  font-size: 2.15em; }
+  font-size: 1.5em; }
 
 h5,
 .h5 {
@@ -484,6 +484,14 @@ blockquote {
 
 address {
   margin: 0 0 1.5em; }
+
+li {
+  margin-bottom: 0.5em;
+  list-style: none; }
+  li li {
+    margin-bottom: 0;
+    margin-left: 1em;
+    list-style: bullet; }
 
 .light {
   font-weight: 300; }
@@ -908,6 +916,7 @@ header.site-header {
 # Layout
 --------------------------------------------------------------*/
 .site-footer {
+  padding-top: 3em;
   font-size: 0.875em;
   text-align: right; }
   .site-footer.footer--home {
@@ -1039,28 +1048,49 @@ object {
 .page .entry-content {
   max-width: 650px; }
 
-.blog .entry-header {
+.blog .entry-header,
+.archive .entry-header {
   margin-top: 1.5em; }
 
-.blog .entry-title {
+.blog .entry-title,
+.archive .entry-title {
   margin-bottom: 0.05em; }
-  .blog .entry-title a {
+  .blog .entry-title a,
+  .archive .entry-title a {
     color: #333; }
-    .blog .entry-title a:hover {
+    .blog .entry-title a:hover,
+    .archive .entry-title a:hover {
       color: #E84848; }
 
-.blog .entry-content {
+.blog .entry-content,
+.archive .entry-content {
   margin-top: 1em;
   padding-bottom: 1.5em;
   margin-bottom: 2em;
   border-bottom: 2px solid #333;
   max-width: 650px; }
 
-.blog .post:last-child .entry-content {
+.blog .post:last-child .entry-content,
+.archive .post:last-child .entry-content {
   border-bottom: 0; }
 
 .single .entry-content {
   max-width: 650px; }
+
+.song-entry__links {
+  display: none; }
+
+.song-entry__title {
+  margin-right: 0.5em;
+  cursor: hand;
+  cursor: pointer;
+  -webkit-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out; }
+  .song-entry__title:hover {
+    color: #E84848; }
+
+.song-entry__icon {
+  vertical-align: -10%; }
 
 /*--------------------------------------------------------------
 # Components

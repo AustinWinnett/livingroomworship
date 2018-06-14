@@ -10,6 +10,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php if ( is_singular() ) :
+		ddd_component(
+			'hero-banner',
+
+			array(
+				'image'  => get_the_post_thumbnail_url(get_the_ID())
+			)
+		);
+	endif; ?>
 	<div class="container">
 		<header class="entry-header">
 			<?php

@@ -1,0 +1,18 @@
+.song-entry__links {
+  display: none;
+}
+
+.song-entry__title {
+  margin-right: 0.5em;
+  cursor: hand;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.song-entry__icon {
+  vertical-align: -10%;
+}

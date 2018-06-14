@@ -98,21 +98,21 @@ h1,
 h2,
 .h2 {
 	text-transform: uppercase;
-	font-size: 2.85em;
+	font-size: 2.5em;
 	@extend %heading-font;
 }
 
 h3,
 .h3 {
 	text-transform: uppercase;
-	font-size: 2.5em;
+	font-size: 2em;
 	@extend %heading-font;
 }
 
 h4,
 .h4 {
 	text-transform: uppercase;
-	font-size: 2.15em;
+	font-size: 1.5em;
 	@extend %heading-font;
 }
 
@@ -142,6 +142,17 @@ blockquote {
 
 address {
 	margin: 0 0 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  list-style: none;
+
+  li {
+    margin-bottom: 0;
+    margin-left: 1em;
+    list-style: bullet;
+  }
 }
 
 .light {
