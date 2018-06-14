@@ -33,12 +33,9 @@ get_header();
 
 			<?php if ( have_posts() ) : ?>
 
-
-
 				<header class="page-header">
-					<h1>Songs</h1>
+					<h1>Sets</h1>
 				</header><!-- .page-header -->
-
 
 				<ul>
 					<?php

@@ -87,7 +87,8 @@ header.site-header {
       }
     }
 
-    &.current_page_item a {
+    &.current_page_item a,
+    &.current-menu-item a {
       &::before {
         width: 100%;
       }

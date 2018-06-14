@@ -144,6 +144,10 @@ address {
 	margin: 0 0 1.5em;
 }
 
+ol, ul {
+  margin-left: 0 !important;
+}
+
 li {
   margin-bottom: 0.5em;
   list-style: none;

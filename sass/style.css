@@ -485,6 +485,9 @@ blockquote {
 address {
   margin: 0 0 1.5em; }
 
+ol, ul {
+  margin-left: 0 !important; }
+
 li {
   margin-bottom: 0.5em;
   list-style: none; }
@@ -817,7 +820,8 @@ header.site-header {
         transition: 0.15s ease-in-out; }
       .nav-menu li a:hover::before {
         width: 100%; }
-    .nav-menu li.current_page_item a::before {
+    .nav-menu li.current_page_item a::before,
+    .nav-menu li.current-menu-item a::before {
       width: 100%; }
 
 .header--home .navbar-logo a span {
@@ -1091,6 +1095,9 @@ object {
 
 .song-entry__icon {
   vertical-align: -10%; }
+
+.set-template-default .content-area {
+  min-height: 85vh; }
 
 /*--------------------------------------------------------------
 # Components

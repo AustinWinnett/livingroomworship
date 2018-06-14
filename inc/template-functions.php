@@ -37,7 +37,7 @@ function desk_dog_development_pingback_header() {
 add_action( 'wp_head', 'desk_dog_development_pingback_header' );
 
 // Include CPTs
-require_once( __DIR__ . '/cpt/song.php');
+require_once( __DIR__ . '/cpt/main.php');
 
 function ddd_component( $component, $data = array(), $selectors = array() ) {
 	if ( $selectors['classes'] && $selectors['id'] ) {
@@ -62,3 +62,22 @@ function remove_admin_login_header() {
     remove_action('wp_head', '_admin_bar_bump_cb');
 }
 add_action('get_header', 'remove_admin_login_header');
+
+add_filter( 'wp_get_nav_menu_items', 'cpt_archive_menu_filter', 10, 3 );
+function cpt_archive_menu_filter( $items, $menu, $args ) {
+
+  /* alter the URL for cpt-archive objects */
+  foreach ( $items as &$item ) {
+    if ( $item->object != 'cpt-archive' ) continue;
+
+    /* we stored the post type in the type property of the menu item */
+    $item->url = get_post_type_archive_link( $item->type );
+
+    if ( get_query_var( 'post_type' ) == $item->type ) {
+      $item->classes []= 'current-menu-item';
+      $item->current = true;
+    }
+  }
+
+  return $items;
+}
